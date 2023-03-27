@@ -12,26 +12,27 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :name %>
+    <%= form.label 'Name:' %>
     <%= form.text_field :name %>
   </div>
 
   <div class="field">
-    <%= form.label :date %>
+    <%= form.label 'Date:' %>
     <%= form.text_field :date %>
   </div>
 
   <div class="field">
-    <%= form.label :caloriesburned %>
+    <%= form.label 'Calories burned:' %>
     <%= form.text_field :caloriesburned %>
   </div>
 
   <div class="field">
-    <%= form.label :duration %>
+    <%= form.label 'Duration:' %>
     <%= form.text_field :duration %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="form-group">
+    <%= link_to 'Cancel', workouts_path, class: 'btn btn-secondary' %>
+    <%= form.submit 'Finish', class: 'btn btn-primary' %>
   </div>
-<% end %>
+<% end %>  
