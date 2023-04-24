@@ -30,8 +30,8 @@
             <td>
               <div class="btn-group" role="group">
                 <%= link_to 'Show', workout, class: 'btn btn-secondary' %>
-                <%= link_to 'Edit', edit_workout_path(workout), class: 'btn btn-primary' %>
-                <%= link_to 'Destroy', workout, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>
+                <% if user_signed_in? %><%= link_to 'Edit', edit_workout_path(workout), class: 'btn btn-primary' %><% end %>
+                <% if user_signed_in? %><%= link_to 'Destroy', workout, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %><% end %>
               </div>
             </td>
           </tr>
