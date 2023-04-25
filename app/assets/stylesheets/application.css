@@ -13,3 +13,9 @@
  *= require_tree .
  *= require_self
  */
+ @font-face {
+    font-family: 'coolvetica';
+    src: url('/assets/fonts/coolvetica.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
